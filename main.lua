@@ -164,6 +164,7 @@ function Gui:CreateLabelUnderTab(tabname, labelname, labeltext, xalign)
 	self.gui.Tabs[tabname][labelname].frame.Size = UDim2.new(0, 140, 0, 22)
 	self.gui.Tabs[tabname][labelname].frame.BackgroundTransparency = .4
 	self.gui.Tabs[tabname][labelname].frame.Text = labeltext
+	self.gui.Tabs[tabname][labelname].frame.TextSize = 7
 	self.gui.Tabs[tabname][labelname].frame.BorderSizePixel = 0
 	self.gui.Tabs[tabname][labelname].frame.BackgroundColor3 = Color3.new(1,1,1)
 	self.gui.Tabs[tabname][labelname].frame.TextColor3 = Color3.new(0,0,0)
@@ -191,6 +192,7 @@ function Gui:CreateTextBoxUnderTab(tabname, boxname, boxtext, xalign)
 	self.gui.Tabs[tabname][boxname].frame.Size = UDim2.new(0, 140, 0, 22)
 	self.gui.Tabs[tabname][boxname].frame.BackgroundTransparency = .4
 	self.gui.Tabs[tabname][boxname].frame.Text = ""
+	self.gui.Tabs[tabname][boxname].frame.TextSize = 7
 	self.gui.Tabs[tabname][boxname].frame.PlaceholderText = boxtext
 	self.gui.Tabs[tabname][boxname].frame.BorderSizePixel = 0
 	self.gui.Tabs[tabname][boxname].frame.BackgroundColor3 = Color3.new(1,1,1)
